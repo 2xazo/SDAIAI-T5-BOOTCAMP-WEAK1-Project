@@ -1,0 +1,21 @@
+order_id,customer_name,city,item_name,quantity,unit_price_sar,total_amount_sar,payment_method,order_status,order_date
+1,Ahmed Al-Qahtani,Riyadh,Laptop,1,3500.00,3500.00,Credit Card,Delivered,2024-01-15
+2,Fatima Al-Dosari,Jeddah,Mouse,2,75.50,151.00,Cash,Delivered,2024-01-16
+3,Mohammed Al-Saud,Dammam,Keyboard,1,250.00,250.00,Credit Card,Delivered,2024-01-17
+4,Sara Al-Harbi,Riyadh,Monitor,1,1200.00,1200.00,Debit Card,Processing,2024-01-18
+5,Ali Al-Mutairi,Mecca,USB Cable,5,25.00,125.00,Cash,Delivered,2024-01-19
+6,,Medina,Headphones,NA,150.00,,Credit Card,Cancelled,2024-01-20
+7,Noura Al-Shammari,Riyadh,Laptop,1,3500.00,3500.00,Credit Card,Delivered,2024-01-21
+8,Khalid Al-Otaibi,Jeddah,Mouse,3,75.50,226.50,Debit Card,Delivered,2024-01-22
+9,Maha Al-Ghamdi,,Keyboard,2,250.00,500.00,Cash,Processing,2024-01-23
+10,Abdullah Al-Zahrani,Riyadh,Monitor,null,1200.00,N/A,Credit Card,Delivered,2024-01-24
+11,Huda Al-Juhani,Dammam,USB Cable,10,25.00,250.00,Cash,Delivered,2024-01-25
+12,Saleh Al-Rashid,Riyadh,Headphones,1,150.00,150.00,Debit Card,Delivered,2024-01-26
+13,,Jeddah,Laptop,1,3500.00,3500.00,Credit Card,Processing,2024-01-27
+14,Layla Al-Harbi,Mecca,Mouse,2,75.50,151.00,Cash,Delivered,2024-01-28
+15,Fahd Al-Qahtani,Riyadh,Keyboard,1,250.00,250.00,Credit Card,Cancelled,2024-01-29
+16,Aisha Al-Saud,Medina,Monitor,2,1200.00,2400.00,Debit Card,Delivered,2024-01-30
+17,Yasser Al-Mutairi,Riyadh,USB Cable,none,25.00,,Cash,Processing,2024-01-31
+18,Reem Al-Shammari,Jeddah,Headphones,1,150.00,150.00,Credit Card,Delivered,2024-02-01
+19,Faisal Al-Dosari,Dammam,Laptop,1,3500.00,3500.00,Debit Card,Delivered,2024-02-02
+20,Nora Al-Harbi,Riyadh,Mouse,4,75.50,302.00,Cash,Delivered,2024-02-03

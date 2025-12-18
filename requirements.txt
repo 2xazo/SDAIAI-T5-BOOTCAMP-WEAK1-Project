@@ -1,0 +1,10 @@
+# CSV Profiler Requirements
+
+# Core dependencies
+typer>=0.9.0
+rich>=13.0.0
+
+# GUI interface (optional)
+streamlit>=1.28.0
+plotly>=5.17.0
+pandas>=2.0.0
