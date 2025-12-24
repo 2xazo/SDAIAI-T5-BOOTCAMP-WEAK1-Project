@@ -22,9 +22,9 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-from csv_profiler.io import read_csv_rows
-from csv_profiler.profiling import profile_rows
-from csv_profiler.render import render_markdown
+from .io import read_csv_rows
+from .profiling import profile_rows
+from .render import render_markdown
 
 app = typer.Typer(
     name="csv-profiler",
