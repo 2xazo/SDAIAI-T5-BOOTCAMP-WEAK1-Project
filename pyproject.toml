@@ -4,4 +4,13 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "streamlit>=1.52.2",
+    "typer>=0.20.1",
+]
+[project.scripts]
+csv-profiler = "src.csv_profiler.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
