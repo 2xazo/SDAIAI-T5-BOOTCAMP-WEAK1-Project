@@ -153,5 +153,34 @@ def main():
     app()
 
 
+def run_streamlit():
+    """Launch the Streamlit web UI."""
+    import subprocess
+    from pathlib import Path
+
+    # Get the app.py file path from the package directory
+    app_path = Path(__file__).parent / "app.py"
+
+    if not app_path.exists():
+        console.print("[bold red]❌ Error:[/bold red] app.py not found", file=sys.stderr)
+        console.print(f"[yellow]Expected location:[/yellow] {app_path}", file=sys.stderr)
+        raise typer.Exit(code=1)
+
+    console.print("[bold cyan]🚀 Launching Streamlit UI...[/bold cyan]")
+    console.print(f"[blue]App file:[/blue] {app_path}\n")
+
+    try:
+        subprocess.run(["streamlit", "run", str(app_path)], check=True)
+    except FileNotFoundError:
+        console.print("[bold red]❌ Error:[/bold red] Streamlit not found", file=sys.stderr)
+        console.print("[yellow]Make sure streamlit is installed[/yellow]", file=sys.stderr)
+        raise typer.Exit(code=1)
+    except KeyboardInterrupt:
+        console.print("\n[yellow]Streamlit stopped[/yellow]")
+    except subprocess.CalledProcessError as e:
+        console.print(f"[bold red]❌ Error running Streamlit:[/bold red] {e}", file=sys.stderr)
+        raise typer.Exit(code=1)
+
+
 if __name__ == '__main__':
     main()

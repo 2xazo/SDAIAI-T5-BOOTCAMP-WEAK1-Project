@@ -7,7 +7,23 @@ requires-python = ">=3.11"
 dependencies = [
     "streamlit>=1.52.2",
     "typer>=0.20.1",
+    "plotly>=5.18.0",
+    "pandas>=2.1.4",
+    "rich>=13.7.0",
 ]
+
 [project.scripts]
 csv-profiler = "csv_profiler.cli:app"
+csv-profiler-ui = "csv_profiler.cli:run_streamlit"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["csv_profiler"]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+csv_profiler = ["*.py", "app.py"]
 
