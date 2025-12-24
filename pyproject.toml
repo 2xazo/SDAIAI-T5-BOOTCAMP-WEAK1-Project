@@ -9,5 +9,5 @@ dependencies = [
     "typer>=0.20.1",
 ]
 [project.scripts]
-csv-profiler = "src.csv_profiler.cli:app"
+csv-profiler = "csv_profiler.cli:app"
 
